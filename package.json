@@ -23,7 +23,7 @@
     "test": "cross-env NODE_ENV=test jest",
     "ci:test": "cross-env NODE_ENV=test jest --ci --runInBand --detectOpenHandles --forceExit",
     "docker:build": "docker build -t benawad/example:latest .",
-    "docker:login": "docker login -u payment@thecoo.co.jp -p thecoo0120",
+    "docker:login": "docker login -u thecoo -p thecoo0120",
     "docker:push": "docker push benawad/example:latest",
     "ci:docker": "npm run docker:build && npm run docker:login && npm run docker:push"
   }
