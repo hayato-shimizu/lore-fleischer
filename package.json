@@ -22,9 +22,9 @@
     "start": "ts-node src/index.ts",
     "test": "cross-env NODE_ENV=test jest",
     "ci:test": "cross-env NODE_ENV=test jest --ci --runInBand --detectOpenHandles --forceExit",
-    "docker:build": "docker build -t benawad/example:latest .",
+    "docker:build": "docker build -t master .",
     "docker:login": "docker login -u thecoo -p thecoo0120",
-    "docker:push": "docker push benawad/example:latest",
+    "docker:push": "docker push master",
     "ci:docker": "npm run docker:build && npm run docker:login && npm run docker:push"
   }
 }
